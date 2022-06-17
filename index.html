@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>TIC-TAC-TOE</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-column {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+      height: 450px;
+      width: 450px;
+    }
+
+    .square {
+      border: 2px solid black;
+      height: 146px;
+      width: 146px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 100px;
+      font-family: fantasy;
+    }
+
+    #reset-button {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tic-Tac-Toe | X goes first!</h1>
+  <h2>It's X's turn!</h2>
+
+  <div class="flex-container flex-column">
+    <div class="flex-container flex-wrap" id="board">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <button id="reset-button">Reset Board</button>
+    <script src='./app.js'></script>
+</body>
+
+</html>
